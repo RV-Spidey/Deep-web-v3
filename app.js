@@ -16,8 +16,8 @@ function checkKey() {
         alert("You are not an approved user. Contact the hosting team.");
         window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
     } else if (userKey === storedKey) {
-        document.getElementById('content').style.display = 'block';
         localStorage.setItem('hasAccess', 'true'); // Store the access flag in localStorage
+        document.getElementById('content').style.display = 'block';
         alert("You are a verified user");
     } else {
         alert("Incorrect key, please try again.");
