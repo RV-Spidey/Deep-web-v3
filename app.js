@@ -6,8 +6,9 @@ const sidebar = document.getElementById('sidebar')
             const userKey = prompt("Please enter your key:");
             const storedKey = localStorage.getItem('storedKey'); // Retrieve only, do not set it
             
-            if (storedKey === null) {
+            if (!storedKey) {
                 alert("you are not an approved user. Contact hosting team");
+                window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
             } else if (userKey === storedKey) {
                 document.getElementById('content').style.display = 'block';
                 console.log("Correct key entered!");
