@@ -11,13 +11,10 @@ function checkKey() {
     } else {
         const userKey = prompt("Please enter your key:");
 
-        if (storedKey === NULL) {
+        if (!storedKey) {
             alert("You are not an approved user. Contact the hosting team.");
-            window.location.href = "https://www.example.com";// Redirect to another page if incorrect
-        }else if(!storedKey) {
-            alert("Incorrect key, please try again.");
-            window.location.href = "https://www.example.com";
-        }else if (userKey === storedKey) {
+            window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
+        } else if (userKey === storedKey) {
             document.getElementById('content').style.display = 'block';
             localStorage.setItem('isLoggedIn', 'true'); // Set flag to indicate successful login
             console.log("Correct key entered!");
@@ -28,7 +25,7 @@ function checkKey() {
     }
 }
 
-// Use DOMContentLoaded event to ensure all elements are loaded before checking the key
+// Use `DOMContentLoaded` event to ensure all elements are loaded before checking the key
 document.addEventListener('DOMContentLoaded', (event) => {
     checkKey();
 });
