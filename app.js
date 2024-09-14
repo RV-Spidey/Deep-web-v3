@@ -1,20 +1,19 @@
 
 const toggleButton = document.getElementById('toggle-btn')
 const sidebar = document.getElementById('sidebar')
-const storedKey = localStorage.getItem('storedKey');
-//const accessCodes = [        "skibidi"   ];
+
+const accessCodes = [
+            "skibidi"
+        ];
 
         const userCode = prompt("Enter access code:");
 
-            if (!storedkey) {
-                alert("you are not an approved user. Contact hosting team");
-            } else if (userCode === storedKey) {
-                //document.getElementById('content').style.display = 'block';
-                console.log("Correct key entered!");
-            } else {
-                alert("Incorrect key, please try again.");
-                window.location.reload(); // Reload the page to prompt again
-            }
+        if (!accessCodes.includes(userCode)) {
+            alert("Access denied. Incorrect code.");
+            window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
+        } else {
+            document.getElementById('content').style.display = 'block'; // Show the protected content
+
         }
 
 function toggleSidebar(){
