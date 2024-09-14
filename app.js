@@ -1,9 +1,8 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-const hasAccess = localStorage.getItem('hasAccess'); // Check if user has previously entered the correct key
 
 function checkKey() {
-    
+    const hasAccess = localStorage.getItem('hasAccess'); // Check if user has previously entered the correct key
     if (hasAccess === 'true') {
         document.getElementById('content').style.display = 'block'; // Show content if access already granted
         return; // No need to ask for the key again
