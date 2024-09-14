@@ -1,8 +1,8 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-
+const hasAccess = localStorage.getItem('hasAccess'); // Check if user has already entered the correct key
 function checkKey() {
-    const hasAccess = localStorage.getItem('hasAccess'); // Check if user has already entered the correct key
+    
     console.log("Has access stored in localStorage: ", hasAccess);
 
     if (hasAccess === 'true') {
