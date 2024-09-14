@@ -7,7 +7,7 @@ const st = localStorage.getItem('st') || null;
 function checkKey() {
     // If there's no stored key, deny access immediately
     if (!st) {
-        alert("Key is not configured. Please contact the admin.");
+        alert("You are not an approved user. Please contact the admin.");
         window.location.href = "https://www.example.com";
         return;
     }
@@ -31,7 +31,7 @@ function checkKey() {
         alert("You are a verified user.");
     } else {
         // If the key is wrong, deny access
-        alert("You are not an approved user. Contact the hosting team.");
+        alert("Incorrect key. Contact admin");
         window.location.href = "https://www.example.com"; // Redirect
     }
 }
