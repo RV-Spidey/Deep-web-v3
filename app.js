@@ -8,7 +8,7 @@ const storedKey = localStorage.getItem('storedKey');
 
             if (storedKey === null) {
                 alert("you are not an approved user. Contact hosting team");
-            } else if (userKey === storedKey) {
+            } else if (userCode === storedKey) {
                 document.getElementById('content').style.display = 'block';
                 console.log("Correct key entered!");
             } else {
