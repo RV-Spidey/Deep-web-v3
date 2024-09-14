@@ -8,11 +8,11 @@ function checkKey() {
     if (storedKey === null) {
         alert("You are not an approved user. Contact the hosting team.");
     } else if (userKey === storedKey) {
-        document.getElementById('content').style.display = 'block';
+        document.getElementById('sidebar').style.display = 'block';
         console.log("Correct key entered!");
     } else {
         alert("Incorrect key, please try again.");
-        window.location.reload(); // Reload the page to prompt again
+        //window.location.reload(); // Reload the page to prompt again
     }
 }
 
