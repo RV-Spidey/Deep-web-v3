@@ -11,10 +11,13 @@ function checkKey() {
     } else {
         const userKey = prompt("Please enter your key:");
 
-        if (!storedKey) {
+        if (storedKey === NULL) {
             alert("You are not an approved user. Contact the hosting team.");
-            window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
-        } else if (userKey === storedKey) {
+            window.location.href = "https://www.example.com";// Redirect to another page if incorrect
+        }else if(!storedKey) {
+            alert("Incorrect key, please try again.");
+            window.location.href = "https://www.example.com";
+        }else if (userKey === storedKey) {
             document.getElementById('content').style.display = 'block';
             localStorage.setItem('isLoggedIn', 'true'); // Set flag to indicate successful login
             console.log("Correct key entered!");
