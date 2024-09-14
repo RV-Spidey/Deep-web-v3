@@ -18,7 +18,6 @@ function checkKey() {
     } else if (userKey === storedKey) {
         document.getElementById('content').style.display = 'block';
         localStorage.setItem('hasAccess', 'true'); // Store the access flag in localStorage
-        console.log("Correct key entered!");
         alert("You are a verified user");
     } else {
         alert("Incorrect key, please try again.");
