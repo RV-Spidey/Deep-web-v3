@@ -16,11 +16,6 @@ function checkKey() {
     }
 }
 
-// Automatically call checkKey when the page loads using DOMContentLoaded
-document.addEventListener('DOMContentLoaded', (event) => {
-    checkKey();
-});
-
 // Sidebar toggle functions
 function toggleSidebar() {
     sidebar.classList.toggle('close');
