@@ -55,3 +55,6 @@ function closeAllSubMenus() {
         ul.previousElementSibling.classList.remove('rotate');
     });
 }
+
+window.onload = checkKey;
+
