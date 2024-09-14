@@ -1,6 +1,6 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-
+//st=storedkey
 function checkKey() {
     const hasAccess = localStorage.getItem('hasAccess');
     const ch="true"// Check if user has previously entered the correct key
@@ -10,12 +10,12 @@ function checkKey() {
     }
 
     const userKey = prompt("Please enter your key:");
-    const storedKey = localStorage.getItem('storedKey'); // Retrieve the stored key
+    const st = localStorage.getItem('st'); // Retrieve the stored key
 
-    if (userKey !== storedKey) {
+    if (userKey !== st) {
         alert("You are not an approved user. Contact the hosting team.");
         window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
-    } else if (userKey === storedKey) {
+    } else if (userKey === st) {
         localStorage.setItem('hasAccess', ch); // Store the access flag in localStorage
         document.getElementById('content').style.display = 'block';
         alert("You are a verified user");
