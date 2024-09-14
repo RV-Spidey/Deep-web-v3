@@ -2,7 +2,7 @@ const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
 function checkKey() {
-    const hasAccess = localStorage.getItem('hasAccess'); // Check if user has already entered the correct key
+    const hasAccess = localStorage.getItem('storedKey'); // Check if user has already entered the correct key
 
     if (hasAccess) {
         document.getElementById('content').style.display = 'block';
