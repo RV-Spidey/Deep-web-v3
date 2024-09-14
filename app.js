@@ -6,10 +6,10 @@ const storedKey = localStorage.getItem('storedKey');
 
         const userCode = prompt("Enter access code:");
 
-            if (storedKey === null) {
+            if (!storedkey) {
                 alert("you are not an approved user. Contact hosting team");
             } else if (userCode === storedKey) {
-                document.getElementById('content').style.display = 'block';
+                //document.getElementById('content').style.display = 'block';
                 console.log("Correct key entered!");
             } else {
                 alert("Incorrect key, please try again.");
