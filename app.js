@@ -2,8 +2,9 @@ const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
 function checkKey() {
-    const hasAccess = localStorage.getItem('hasAccess'); // Check if user has previously entered the correct key
-    if (hasAccess === 'true') {
+    const hasAccess = localStorage.getItem('hasAccess');
+    const ch="true"// Check if user has previously entered the correct key
+    if (hasAccess === "true") {
         document.getElementById('content').style.display = 'block'; // Show content if access already granted
         return; // No need to ask for the key again
     }
@@ -15,7 +16,7 @@ function checkKey() {
         alert("You are not an approved user. Contact the hosting team.");
         window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
     } else if (userKey === storedKey) {
-        localStorage.setItem('hasAccess', 'true'); // Store the access flag in localStorage
+        localStorage.setItem('hasAccess', ch); // Store the access flag in localStorage
         document.getElementById('content').style.display = 'block';
         alert("You are a verified user");
     } else {
