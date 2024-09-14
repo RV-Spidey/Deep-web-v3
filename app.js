@@ -2,6 +2,13 @@ const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
 function checkKey() {
+    const hasAccess = localStorage.getItem('hasAccess'); // Check if user has already entered the correct key
+
+    if (hasAccess) {
+        document.getElementById('content').style.display = 'block';
+        return; // No need to ask for the key again
+    }
+
     const userKey = prompt("Please enter your key:");
     const storedKey = localStorage.getItem('storedKey'); // Retrieve only, do not set it
 
@@ -10,6 +17,7 @@ function checkKey() {
         window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
     } else if (userKey === storedKey) {
         document.getElementById('content').style.display = 'block';
+        localStorage.setItem('hasAccess', 'true'); // Store a flag to avoid asking for the key again
         console.log("Correct key entered!");
     } else {
         alert("Incorrect key, please try again.");
