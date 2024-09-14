@@ -2,26 +2,18 @@ const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
 function checkKey() {
-    const isLoggedIn = localStorage.getItem('isLoggedIn'); // Check if user is already logged in
-    const storedKey = localStorage.getItem('storedKey'); // Retrieve stored key
+    const userKey = prompt("Please enter your key:");
+    const storedKey = localStorage.getItem('storedKey'); // Retrieve only, do not set it
 
-    if (isLoggedIn === 'true') {
+    if (!storedKey) {
+        alert("You are not an approved user. Contact the hosting team.");
+        window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
+    } else if (userKey === storedKey) {
         document.getElementById('content').style.display = 'block';
-        console.log("User already logged in!");
+        console.log("Correct key entered!");
     } else {
-        const userKey = prompt("Please enter your key:");
-
-        if (!storedKey) {
-            alert("You are not an approved user. Contact the hosting team.");
-            window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
-        } else if (userKey === storedKey) {
-            document.getElementById('content').style.display = 'block';
-            localStorage.setItem('isLoggedIn', 'true'); // Set flag to indicate successful login
-            console.log("Correct key entered!");
-        } else {
-            alert("Incorrect key, please try again.");
-            window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
-        }
+        alert("Incorrect key, please try again.");
+        window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
     }
 }
 
