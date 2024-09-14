@@ -12,7 +12,7 @@ const accessCodes = [
             alert("Access denied. Incorrect code.");
             window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
         } else {
-            document.getElementById('content').style.display = 'block'; // Show the protected content
+            document.getElementById('sidebar').style.display = 'block'; // Show the protected content
 
         }
 
