@@ -1,35 +1,47 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-//st=storedkey
+
+// Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
+const st = localStorage.getItem('st') || null;
+
 function checkKey() {
-    const hasAccess = localStorage.getItem('hasAccess');
-    const ch="true"// Check if user has previously entered the correct key
-    if (hasAccess === "true") {
-        document.getElementById('content').style.display = 'block'; // Show content if access already granted
-        return; // No need to ask for the key again
+    // If there's no stored key, deny access immediately
+    if (!st) {
+        alert("Key is not configured. Please contact the admin.");
+        window.location.href = "https://www.example.com";
+        return;
     }
 
-    const userKey = prompt("Please enter your key:");
-    const st = localStorage.getItem('st'); // Retrieve the stored key
+    const hasAccess = localStorage.getItem('hasAccess');
+    const correctAccessFlag = "true"; // Use consistent flag value
 
-    if (userKey !== st) {
-        alert("You are not an approved user. Contact the hosting team.");
-        window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
-    } else if (userKey === st) {
-        localStorage.setItem('hasAccess', ch); // Store the access flag in localStorage
+    // Check if user already has access
+    if (hasAccess === correctAccessFlag) {
+        document.getElementById('content').style.display = 'block'; // Show content
+        return; // Skip asking for the key again
+    }
+
+    // Ask for the user's key
+    const userKey = prompt("Please enter your key:");
+
+    if (userKey === st) {
+        // If correct key, grant access
+        localStorage.setItem('hasAccess', correctAccessFlag);
         document.getElementById('content').style.display = 'block';
-        alert("You are a verified user");
+        alert("You are a verified user.");
     } else {
-        alert("Incorrect key, please try again.");
-        window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
+        // If the key is wrong, deny access
+        alert("You are not an approved user. Contact the hosting team.");
+        window.location.href = "https://www.example.com"; // Redirect
     }
 }
 
-// Use `DOMContentLoaded` event to ensure all elements are loaded before checking the key
+// Check the key after all elements are loaded
 document.addEventListener('DOMContentLoaded', (event) => {
     checkKey();
 });
 
+// Sidebar toggle functions (unchanged)
 function toggleSidebar() {
     sidebar.classList.toggle('close');
     toggleButton.classList.toggle('rotate');
