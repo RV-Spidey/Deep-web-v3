@@ -13,7 +13,7 @@ const sidebar = document.getElementById('sidebar')
                 console.log("Correct key entered!");
             } else {
                 alert("Incorrect key, please try again.");
-                window.location.reload(); // Reload the page to prompt again
+                 window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
             }
         }
  // Automatically call checkKey when the page loads
