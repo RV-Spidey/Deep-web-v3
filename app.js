@@ -1,10 +1,9 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-const hasAccess = localStorage.getItem('hasAccess'); // Check if user has already entered the correct key
+const hasAccess = localStorage.getItem('hasAccess'); // Check if user has previously entered the correct key
+
 function checkKey() {
     
-    console.log("Has access stored in localStorage: ", hasAccess);
-
     if (hasAccess === 'true') {
         document.getElementById('content').style.display = 'block'; // Show content if access already granted
         return; // No need to ask for the key again
@@ -12,7 +11,6 @@ function checkKey() {
 
     const userKey = prompt("Please enter your key:");
     const storedKey = localStorage.getItem('storedKey'); // Retrieve the stored key
-    console.log("Stored key: ", storedKey);
 
     if (!storedKey) {
         alert("You are not an approved user. Contact the hosting team.");
@@ -20,7 +18,7 @@ function checkKey() {
     } else if (userKey === storedKey) {
         document.getElementById('content').style.display = 'block';
         localStorage.setItem('hasAccess', 'true'); // Store the access flag in localStorage
-        console.log("Access granted and stored.");
+        console.log("Correct key entered!");
     } else {
         alert("Incorrect key, please try again.");
         window.location.href = "https://www.example.com"; // Redirect to another page if incorrect
