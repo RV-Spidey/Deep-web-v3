@@ -64,11 +64,14 @@ function toggleSubMenu(button) {
 
 function showVideo(videoId) {
     // Hide and pause all videos
-    const videos = document.querySelectorAll('.video video'); // Select video elements directly inside .video
-    videos.forEach(videoElement => {
-        videoElement.parentElement.style.display = 'none'; // Hide the parent .video element
-        videoElement.pause(); // Pause the video
-        videoElement.currentTime = 0; // Reset the video to the start
+    const videoContainers = document.querySelectorAll('.video'); // Select the .video containers
+    videoContainers.forEach(container => {
+        const videoElement = container.querySelector('video');
+        if (videoElement) {
+            videoElement.pause(); // Pause the video
+            videoElement.currentTime = 0; // Reset the video to the start
+        }
+        container.style.display = 'none'; // Hide the parent .video container
     });
 
     // Show the selected video
