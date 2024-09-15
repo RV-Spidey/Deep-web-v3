@@ -63,9 +63,16 @@ function toggleSubMenu(button) {
 }
 
 function showVideo(videoId) {
-    // Hide all videos
+    // Hide and pause all videos
     const videos = document.querySelectorAll('.video');
-    videos.forEach(video => video.style.display = 'none');
+    videos.forEach(video => {
+        video.style.display = 'none';
+        const videoElement = video.querySelector('video');
+        if (videoElement) {
+            videoElement.pause(); // Pause the video
+            videoElement.currentTime = 0; // Reset the video to the start
+        }
+    });
 
     // Show the selected video
     const videoToShow = document.getElementById(videoId);
@@ -73,6 +80,7 @@ function showVideo(videoId) {
         videoToShow.style.display = 'block';
     }
 }
+
 
 function closeAllSubMenus() {
     Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
