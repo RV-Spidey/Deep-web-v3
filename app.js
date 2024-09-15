@@ -2,11 +2,11 @@ const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
 // Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
-const st = localStorage.getItem('st') || null;
+const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
 
 function checkKey() {
     // If there's no stored key, deny access immediately
-    if (!st) {
+    if (!____________________________________________________________________________________________________________________________________) {
         alert("You are not an approved user. Please contact the admin.");
         window.location.href = "https://www.example.com";
         return;
@@ -25,7 +25,7 @@ function checkKey() {
     // Ask for the user's key
     //const userKey = prompt("Please enter your key:");
 
-    if (h === st) {
+    if (h === ____________________________________________________________________________________________________________________________________) {
         // If correct key, grant access
         localStorage.setItem('hasAccess', correctAccessFlag);
         document.getElementById('content').style.display = 'block';
