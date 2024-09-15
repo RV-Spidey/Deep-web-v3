@@ -12,19 +12,20 @@ function checkKey() {
         return;
     }
 
-    const hasAccess = localStorage.getItem('hasAccess');
+    //const hasAccess = localStorage.getItem('hasAccess');
     const correctAccessFlag = "true"; // Use consistent flag value
+    const h = "‏‏‎ ‎";
 
     // Check if user already has access
-    if (hasAccess === correctAccessFlag) {
+    /*if (hasAccess === correctAccessFlag) {
         document.getElementById('content').style.display = 'block'; // Show content
         return; // Skip asking for the key again
-    }
+    }*/
 
     // Ask for the user's key
-    const userKey = prompt("Please enter your key:");
+    //const userKey = prompt("Please enter your key:");
 
-    if (userKey === st) {
+    if (h === st) {
         // If correct key, grant access
         localStorage.setItem('hasAccess', correctAccessFlag);
         document.getElementById('content').style.display = 'block';
