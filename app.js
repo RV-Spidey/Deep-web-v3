@@ -68,8 +68,11 @@ function showVideo(videoId) {
     videoContainers.forEach(container => {
         const videoElement = container.querySelector('video');
         if (videoElement) {
+            console.log(`Pausing video: ${videoElement.src}`); // Debug log
             videoElement.pause(); // Pause the video
             videoElement.currentTime = 0; // Reset the video to the start
+        } else {
+            console.warn('No video element found in container:', container); // Log if no video is found
         }
         container.style.display = 'none'; // Hide the parent .video container
     });
@@ -80,8 +83,13 @@ function showVideo(videoId) {
         videoToShow.style.display = 'block';
         const videoElement = videoToShow.querySelector('video');
         if (videoElement) {
+            console.log(`Playing video: ${videoElement.src}`); // Debug log
             videoElement.play(); // Optionally start playing the new video
+        } else {
+            console.warn(`No video element found for videoId: ${videoId}`); // Log if no video is found for the selected video
         }
+    } else {
+        console.error(`No video container found for videoId: ${videoId}`); // Log if no container is found for the videoId
     }
 }
 
