@@ -63,33 +63,14 @@ function toggleSubMenu(button) {
 }
 
 function showVideo(videoId) {
-    // Hide and pause all videos
-    const videoContainers = document.querySelectorAll('.video'); // Select the .video containers
-    videoContainers.forEach(container => {
-        const videoElement = container.querySelector('video');
-        if (videoElement) {
-            console.log(`Pausing video: ${videoElement.src}`); // Debug log
-            videoElement.pause(); // Pause the video
-            videoElement.currentTime = 0; // Reset the video to the start
-        } else {
-            console.warn('No video element found in container:', container); // Log if no video is found
-        }
-        container.style.display = 'none'; // Hide the parent .video container
-    });
+    // Hide all videos
+    const videos = document.querySelectorAll('.video');
+    videos.forEach(video => video.style.display = 'none');
 
     // Show the selected video
     const videoToShow = document.getElementById(videoId);
     if (videoToShow) {
-        videoToShow.style.display = 'block'; // Show the new video container
-        const videoElement = videoToShow.querySelector('video');
-        if (videoElement) {
-            console.log(`Playing video: ${videoElement.src}`); // Debug log
-            videoElement.play(); // Start playing the new video
-        } else {
-            console.warn(`No video element found for videoId: ${videoId}`); // Log if no video is found for the selected video
-        }
-    } else {
-        console.error(`No video container found for videoId: ${videoId}`); // Log if no container is found for the videoId
+        videoToShow.style.display = 'block';
     }
 }
 
