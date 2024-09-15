@@ -80,11 +80,11 @@ function showVideo(videoId) {
     // Show the selected video
     const videoToShow = document.getElementById(videoId);
     if (videoToShow) {
-        videoToShow.style.display = 'block';
+        videoToShow.style.display = 'block'; // Show the new video container
         const videoElement = videoToShow.querySelector('video');
         if (videoElement) {
             console.log(`Playing video: ${videoElement.src}`); // Debug log
-            videoElement.play(); // Optionally start playing the new video
+            videoElement.play(); // Start playing the new video
         } else {
             console.warn(`No video element found for videoId: ${videoId}`); // Log if no video is found for the selected video
         }
@@ -92,7 +92,6 @@ function showVideo(videoId) {
         console.error(`No video container found for videoId: ${videoId}`); // Log if no container is found for the videoId
     }
 }
-
 
 
 function closeAllSubMenus() {
