@@ -64,22 +64,24 @@ function toggleSubMenu(button) {
 
 function showVideo(videoId) {
     // Hide and pause all videos
-    const videos = document.querySelectorAll('.video');
-    videos.forEach(video => {
-        video.style.display = 'none';
-        const videoElement = video.querySelector('video');
-        if (videoElement) {
-            videoElement.pause(); // Pause the video
-            videoElement.currentTime = 0; // Reset the video to the start
-        }
+    const videos = document.querySelectorAll('.video video'); // Select video elements directly inside .video
+    videos.forEach(videoElement => {
+        videoElement.parentElement.style.display = 'none'; // Hide the parent .video element
+        videoElement.pause(); // Pause the video
+        videoElement.currentTime = 0; // Reset the video to the start
     });
 
     // Show the selected video
     const videoToShow = document.getElementById(videoId);
     if (videoToShow) {
         videoToShow.style.display = 'block';
+        const videoElement = videoToShow.querySelector('video');
+        if (videoElement) {
+            videoElement.play(); // Optionally start playing the new video
+        }
     }
 }
+
 
 
 function closeAllSubMenus() {
