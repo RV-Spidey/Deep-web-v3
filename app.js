@@ -1,1 +1,107 @@
-const _0x39b340=_0x5445;function _0x4536(){const _0x236c96=['12bzLUEe','addEventListener','charAt','229387IAKKHK','href','You\x20are\x20not\x20an\x20approved\x20user.\x20Please\x20contact\x20the\x20admin.','indexOf','split','2TAwaRz','.video','toggle-btn','‏‏‎\x20‎','style','1856436xZpjmF','10938433LgHlgE','forEach','none','https://www.example.com','nextElementSibling','close','userElement','block','5tIGLey','1237061OpjMhF','preventDefault','display','from','substring','sidebar','toggle','true','classList','198448yebGbR','getElementById','9ijHTvd','1503249PDdCqX','cookie','remove','You\x20are\x20a\x20verified\x20user.','content','show','rotate','setItem','_______________________________________________________________________________________________________________________________________________','length','location','24BMmAej','Incorrect\x20key.\x20Contact\x20admin','previousElementSibling','hasAccess','getElementsByClassName','1634170nkCWhX','getItem'];_0x4536=function(){return _0x236c96;};return _0x4536();}(function(_0x5ae908,_0x320494){const _0x27acc8=_0x5445,_0x3f9ba3=_0x5ae908();while(!![]){try{const _0x37af6f=parseInt(_0x27acc8(0x85))/0x1*(-parseInt(_0x27acc8(0x8a))/0x2)+parseInt(_0x27acc8(0xa5))/0x3+parseInt(_0x27acc8(0xa2))/0x4+-parseInt(_0x27acc8(0x98))/0x5*(parseInt(_0x27acc8(0x8f))/0x6)+-parseInt(_0x27acc8(0x99))/0x7*(parseInt(_0x27acc8(0xb0))/0x8)+-parseInt(_0x27acc8(0xa4))/0x9*(parseInt(_0x27acc8(0xb5))/0xa)+-parseInt(_0x27acc8(0x90))/0xb*(-parseInt(_0x27acc8(0xb7))/0xc);if(_0x37af6f===_0x320494)break;else _0x3f9ba3['push'](_0x3f9ba3['shift']());}catch(_0x3f854d){_0x3f9ba3['push'](_0x3f9ba3['shift']());}}}(_0x4536,0x4c58f));const toggleButton=document[_0x39b340(0xa3)](_0x39b340(0x8c)),sidebar=document[_0x39b340(0xa3)](_0x39b340(0x9e)),userName=localStorage[_0x39b340(0xb6)]('userName');document[_0x39b340(0xa3)](_0x39b340(0x96))['textContent']=userName||'';const ____________________________________________________________________________________________________________________________________=localStorage[_0x39b340(0xb6)]('____________________________________________________________________________________________________________________________________')||null;function getCookie(_0x4d2597){const _0x34f45f=_0x39b340,_0x1e6e46=_0x4d2597+'=',_0xb7ab42=document[_0x34f45f(0xa6)][_0x34f45f(0x89)](';');for(let _0xa2b3a7=0x0;_0xa2b3a7<_0xb7ab42[_0x34f45f(0xae)];_0xa2b3a7++){let _0x240b29=_0xb7ab42[_0xa2b3a7];while(_0x240b29[_0x34f45f(0x84)](0x0)=='\x20')_0x240b29=_0x240b29['substring'](0x1,_0x240b29['length']);if(_0x240b29[_0x34f45f(0x88)](_0x1e6e46)==0x0)return _0x240b29[_0x34f45f(0x9d)](_0x1e6e46[_0x34f45f(0xae)],_0x240b29[_0x34f45f(0xae)]);}return null;}function _0x5445(_0x2db397,_0x40ac26){const _0x4536ce=_0x4536();return _0x5445=function(_0x54458b,_0xe3cce1){_0x54458b=_0x54458b-0x84;let _0x4feb77=_0x4536ce[_0x54458b];return _0x4feb77;},_0x5445(_0x2db397,_0x40ac26);}const ________________________________________________________________________________________________________________=getCookie(_0x39b340(0xad));function checkKey(){const _0x2b93c1=_0x39b340;if(!____________________________________________________________________________________________________________________________________&&!________________________________________________________________________________________________________________){alert(_0x2b93c1(0x87)),window[_0x2b93c1(0xaf)][_0x2b93c1(0x86)]=_0x2b93c1(0x93);return;}const _0x26578e=_0x2b93c1(0xa0),_0x51187e=_0x2b93c1(0x8d),_0x5c1996='‏‏‎\x20‎‏‏‎\x20‎';_0x51187e===____________________________________________________________________________________________________________________________________&&_0x5c1996===________________________________________________________________________________________________________________?(localStorage[_0x2b93c1(0xac)](_0x2b93c1(0xb3),_0x26578e),document[_0x2b93c1(0xa3)](_0x2b93c1(0xa9))['style'][_0x2b93c1(0x9b)]=_0x2b93c1(0x97),alert(_0x2b93c1(0xa8))):(alert(_0x2b93c1(0xb1)),window[_0x2b93c1(0xaf)][_0x2b93c1(0x86)]='https://www.example.com');}document[_0x39b340(0xb8)]('DOMContentLoaded',_0x18681f=>{checkKey();});function toggleSidebar(){const _0x58e0ce=_0x39b340;sidebar[_0x58e0ce(0xa1)]['toggle'](_0x58e0ce(0x95)),toggleButton[_0x58e0ce(0xa1)]['toggle']('rotate'),closeAllSubMenus();}function toggleSubMenu(_0x25c584){const _0x34b471=_0x39b340;!_0x25c584[_0x34b471(0x94)][_0x34b471(0xa1)]['contains'](_0x34b471(0xaa))&&closeAllSubMenus(),_0x25c584[_0x34b471(0x94)][_0x34b471(0xa1)]['toggle'](_0x34b471(0xaa)),_0x25c584[_0x34b471(0xa1)][_0x34b471(0x9f)](_0x34b471(0xab)),sidebar[_0x34b471(0xa1)]['contains'](_0x34b471(0x95))&&(sidebar[_0x34b471(0xa1)][_0x34b471(0x9f)](_0x34b471(0x95)),toggleButton['classList']['toggle']('rotate'));}function showVideo(_0x54eef1){const _0x5dcb07=_0x39b340,_0x459bf9=document['querySelectorAll'](_0x5dcb07(0x8b));_0x459bf9[_0x5dcb07(0x91)](_0x126255=>_0x126255[_0x5dcb07(0x8e)]['display']=_0x5dcb07(0x92));const _0x406a8c=document[_0x5dcb07(0xa3)](_0x54eef1);_0x406a8c&&(_0x406a8c[_0x5dcb07(0x8e)][_0x5dcb07(0x9b)]=_0x5dcb07(0x97));}function closeAllSubMenus(){const _0x3b475a=_0x39b340;Array[_0x3b475a(0x9c)](sidebar[_0x3b475a(0xb4)]('show'))[_0x3b475a(0x91)](_0x3eb254=>{const _0x1da173=_0x3b475a;_0x3eb254[_0x1da173(0xa1)][_0x1da173(0xa7)](_0x1da173(0xaa)),_0x3eb254[_0x1da173(0xb2)][_0x1da173(0xa1)]['remove'](_0x1da173(0xab));});}document[_0x39b340(0xb8)]('contextmenu',function(_0x1755db){const _0x46dc45=_0x39b340;_0x1755db[_0x46dc45(0x9a)]();});
+const toggleButton = document.getElementById('toggle-btn');
+const sidebar = document.getElementById('sidebar');
+const userName = localStorage.getItem('userName');
+document.getElementById('userElement').textContent = userName || '';
+
+// Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
+const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
+
+// Function to get a cookie by name
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length); // Trim leading spaces
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+// Example: Retrieve the 'skibidi' cookie
+const ________________________________________________________________________________________________________________ = getCookie('_______________________________________________________________________________________________________________________________________________');
+// Outputs: 'exampleValue' if the cookie exists
+
+function checkKey() {
+    // If there's no stored key, deny access immediately
+    if (!____________________________________________________________________________________________________________________________________ && !________________________________________________________________________________________________________________) {
+        alert("You are not an approved user. Please contact the admin.");
+        window.location.href = "https://www.example.com";
+        return;
+    }
+
+    //const hasAccess = localStorage.getItem('hasAccess');
+    const correctAccessFlag = "true"; // Use consistent flag value
+    const h = "‏‏‎ ‎"
+    const a = "‏‏‎ ‎‏‏‎ ‎"
+
+    // Check if user already has access
+    /*if (hasAccess === correctAccessFlag) {
+        document.getElementById('content').style.display = 'block'; // Show content
+        return; // Skip asking for the key again
+    }*/
+
+    // Ask for the user's key
+    //const userKey = prompt("Please enter your key:");
+
+    if (h === ____________________________________________________________________________________________________________________________________ && a === ________________________________________________________________________________________________________________) {
+        // If correct key, grant access
+        localStorage.setItem('hasAccess', correctAccessFlag);
+        document.getElementById('content').style.display = 'block';
+        alert("You are a verified user.");
+    } else {
+        // If the key is wrong, deny access
+        alert("Incorrect key. Contact admin");
+        window.location.href = "https://www.example.com"; // Redirect
+    }
+}
+
+// Check the key after all elements are loaded
+document.addEventListener('DOMContentLoaded', (event) => {
+    checkKey();
+});
+
+// Sidebar toggle functions (unchanged)
+function toggleSidebar() {
+    sidebar.classList.toggle('close');
+    toggleButton.classList.toggle('rotate');
+    closeAllSubMenus();
+}
+
+function toggleSubMenu(button) {
+    if (!button.nextElementSibling.classList.contains('show')) {
+        closeAllSubMenus();
+    }
+
+    button.nextElementSibling.classList.toggle('show');
+    button.classList.toggle('rotate');
+
+    if (sidebar.classList.contains('close')) {
+        sidebar.classList.toggle('close');
+        toggleButton.classList.toggle('rotate');
+    }
+}
+
+function showVideo(videoId) {
+    // Hide all videos
+    const videos = document.querySelectorAll('.video');
+    videos.forEach(video => video.style.display = 'none');
+
+    // Show the selected video
+    const videoToShow = document.getElementById(videoId);
+    if (videoToShow) {
+        videoToShow.style.display = 'block';
+    }
+}
+
+
+function closeAllSubMenus() {
+    Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
+        ul.classList.remove('show');
+        ul.previousElementSibling.classList.remove('rotate');
+    });
+}
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
