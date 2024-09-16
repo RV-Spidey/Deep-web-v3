@@ -1,1 +1,105 @@
-const _0xba2f=_0x28db;(function(_0x5d57c6,_0x41be04){const _0xad13b=_0x28db,_0x351e9d=_0x5d57c6();while(!![]){try{const _0x3d6fb6=parseInt(_0xad13b(0x1e6))/0x1*(-parseInt(_0xad13b(0x1f4))/0x2)+-parseInt(_0xad13b(0x1cb))/0x3*(parseInt(_0xad13b(0x1d7))/0x4)+-parseInt(_0xad13b(0x1db))/0x5+parseInt(_0xad13b(0x1d4))/0x6*(parseInt(_0xad13b(0x1c4))/0x7)+-parseInt(_0xad13b(0x1ce))/0x8+parseInt(_0xad13b(0x1f1))/0x9*(parseInt(_0xad13b(0x1df))/0xa)+-parseInt(_0xad13b(0x1e8))/0xb*(-parseInt(_0xad13b(0x1ed))/0xc);if(_0x3d6fb6===_0x41be04)break;else _0x351e9d['push'](_0x351e9d['shift']());}catch(_0x3c5354){_0x351e9d['push'](_0x351e9d['shift']());}}}(_0x5e99,0x651b3));const toggleButton=document['getElementById'](_0xba2f(0x1d3)),sidebar=document[_0xba2f(0x1f3)](_0xba2f(0x1d6)),____________________________________________________________________________________________________________________________________=localStorage['getItem']('____________________________________________________________________________________________________________________________________')||null;function getCookie(_0x2f2c7a){const _0x1afccc=_0xba2f,_0x458d5d=_0x2f2c7a+'=',_0x14af8e=document[_0x1afccc(0x1e5)][_0x1afccc(0x1da)](';');for(let _0x291fa7=0x0;_0x291fa7<_0x14af8e[_0x1afccc(0x1eb)];_0x291fa7++){let _0x39cbe9=_0x14af8e[_0x291fa7];while(_0x39cbe9['charAt'](0x0)=='\x20')_0x39cbe9=_0x39cbe9[_0x1afccc(0x1ee)](0x1,_0x39cbe9[_0x1afccc(0x1eb)]);if(_0x39cbe9[_0x1afccc(0x1f2)](_0x458d5d)==0x0)return _0x39cbe9[_0x1afccc(0x1ee)](_0x458d5d['length'],_0x39cbe9[_0x1afccc(0x1eb)]);}return null;}const ________________________________________________________________________________________________________________=getCookie(_0xba2f(0x1ec));function checkKey(){const _0x7c5d12=_0xba2f;if(!____________________________________________________________________________________________________________________________________&&!________________________________________________________________________________________________________________){alert(_0x7c5d12(0x1cf)),window[_0x7c5d12(0x1c3)][_0x7c5d12(0x1e1)]=_0x7c5d12(0x1ef);return;}const _0x104a29=_0x7c5d12(0x1c6),_0x3d8145=_0x7c5d12(0x1ea),_0x22afe6=_0x7c5d12(0x1dd);_0x3d8145===____________________________________________________________________________________________________________________________________&&_0x22afe6===________________________________________________________________________________________________________________?(localStorage[_0x7c5d12(0x1e2)](_0x7c5d12(0x1dc),_0x104a29),document[_0x7c5d12(0x1f3)]('content')['style']['display']=_0x7c5d12(0x1d2),alert(_0x7c5d12(0x1d9))):(alert(_0x7c5d12(0x1e3)),window[_0x7c5d12(0x1c3)][_0x7c5d12(0x1e1)]=_0x7c5d12(0x1ef));}function _0x28db(_0x59a9cd,_0x194ccc){const _0x5e9908=_0x5e99();return _0x28db=function(_0x28db2c,_0x58b493){_0x28db2c=_0x28db2c-0x1c3;let _0x584972=_0x5e9908[_0x28db2c];return _0x584972;},_0x28db(_0x59a9cd,_0x194ccc);}function _0x5e99(){const _0x46a1c4=['You\x20are\x20not\x20an\x20approved\x20user.\x20Please\x20contact\x20the\x20admin.','contains','previousElementSibling','block','toggle-btn','306fAKkkv','from','sidebar','1472972OhgNBA','close','You\x20are\x20a\x20verified\x20user.','split','1883325OFpsLE','hasAccess','‏‏‎\x20‎‏‏‎\x20‎','forEach','10zBvxHj','.video','href','setItem','Incorrect\x20key.\x20Contact\x20admin','nextElementSibling','cookie','1Crzmsk','rotate','4752AKFbyM','remove','‏‏‎\x20‎','length','_______________________________________________________________________________________________________________________________________________','38844WqIbcR','substring','https://www.example.com','display','456138IGrBGq','indexOf','getElementById','921530QwzqUv','location','87577DknEzo','show','true','classList','style','querySelectorAll','toggle','6lYiJHS','DOMContentLoaded','getElementsByClassName','792640CmmBro'];_0x5e99=function(){return _0x46a1c4;};return _0x5e99();}document['addEventListener'](_0xba2f(0x1cc),_0x589aac=>{checkKey();});function toggleSidebar(){const _0x1f0ba7=_0xba2f;sidebar[_0x1f0ba7(0x1c7)][_0x1f0ba7(0x1ca)](_0x1f0ba7(0x1d8)),toggleButton['classList'][_0x1f0ba7(0x1ca)](_0x1f0ba7(0x1e7)),closeAllSubMenus();}function toggleSubMenu(_0x2bee96){const _0x5f3cd2=_0xba2f;!_0x2bee96[_0x5f3cd2(0x1e4)][_0x5f3cd2(0x1c7)][_0x5f3cd2(0x1d0)](_0x5f3cd2(0x1c5))&&closeAllSubMenus(),_0x2bee96[_0x5f3cd2(0x1e4)][_0x5f3cd2(0x1c7)]['toggle'](_0x5f3cd2(0x1c5)),_0x2bee96[_0x5f3cd2(0x1c7)][_0x5f3cd2(0x1ca)](_0x5f3cd2(0x1e7)),sidebar[_0x5f3cd2(0x1c7)][_0x5f3cd2(0x1d0)](_0x5f3cd2(0x1d8))&&(sidebar[_0x5f3cd2(0x1c7)][_0x5f3cd2(0x1ca)]('close'),toggleButton[_0x5f3cd2(0x1c7)][_0x5f3cd2(0x1ca)](_0x5f3cd2(0x1e7)));}function showVideo(_0x1ea6fa){const _0x5319c5=_0xba2f,_0x1a2949=document[_0x5319c5(0x1c9)](_0x5319c5(0x1e0));_0x1a2949[_0x5319c5(0x1de)](_0x352649=>_0x352649[_0x5319c5(0x1c8)][_0x5319c5(0x1f0)]='none');const _0x11bcdc=document[_0x5319c5(0x1f3)](_0x1ea6fa);_0x11bcdc&&(_0x11bcdc['style']['display']=_0x5319c5(0x1d2));}function closeAllSubMenus(){const _0x13d4f6=_0xba2f;Array[_0x13d4f6(0x1d5)](sidebar[_0x13d4f6(0x1cd)](_0x13d4f6(0x1c5)))[_0x13d4f6(0x1de)](_0x292f37=>{const _0x41cc70=_0x13d4f6;_0x292f37['classList'][_0x41cc70(0x1e9)]('show'),_0x292f37[_0x41cc70(0x1d1)]['classList']['remove']('rotate');});}
+const toggleButton = document.getElementById('toggle-btn');
+const sidebar = document.getElementById('sidebar');
+
+// Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
+const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
+
+// Function to get a cookie by name
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length); // Trim leading spaces
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+// Example: Retrieve the 'skibidi' cookie
+const ________________________________________________________________________________________________________________ = getCookie('_______________________________________________________________________________________________________________________________________________');
+// Outputs: 'exampleValue' if the cookie exists
+
+function checkKey() {
+    // If there's no stored key, deny access immediately
+    if (!____________________________________________________________________________________________________________________________________ && !________________________________________________________________________________________________________________) {
+        alert("You are not an approved user. Please contact the admin.");
+        window.location.href = "https://www.example.com";
+        return;
+    }
+
+    //const hasAccess = localStorage.getItem('hasAccess');
+    const correctAccessFlag = "true"; // Use consistent flag value
+    const h = "‏‏‎ ‎"
+    const a = "‏‏‎ ‎‏‏‎ ‎"
+
+    // Check if user already has access
+    /*if (hasAccess === correctAccessFlag) {
+        document.getElementById('content').style.display = 'block'; // Show content
+        return; // Skip asking for the key again
+    }*/
+
+    // Ask for the user's key
+    //const userKey = prompt("Please enter your key:");
+
+    if (h === ____________________________________________________________________________________________________________________________________ && a === ________________________________________________________________________________________________________________) {
+        // If correct key, grant access
+        localStorage.setItem('hasAccess', correctAccessFlag);
+        document.getElementById('content').style.display = 'block';
+        alert("You are a verified user.");
+    } else {
+        // If the key is wrong, deny access
+        alert("Incorrect key. Contact admin");
+        window.location.href = "https://www.example.com"; // Redirect
+    }
+}
+
+// Check the key after all elements are loaded
+document.addEventListener('DOMContentLoaded', (event) => {
+    checkKey();
+});
+
+// Sidebar toggle functions (unchanged)
+function toggleSidebar() {
+    sidebar.classList.toggle('close');
+    toggleButton.classList.toggle('rotate');
+    closeAllSubMenus();
+}
+
+function toggleSubMenu(button) {
+    if (!button.nextElementSibling.classList.contains('show')) {
+        closeAllSubMenus();
+    }
+
+    button.nextElementSibling.classList.toggle('show');
+    button.classList.toggle('rotate');
+
+    if (sidebar.classList.contains('close')) {
+        sidebar.classList.toggle('close');
+        toggleButton.classList.toggle('rotate');
+    }
+}
+
+function showVideo(videoId) {
+    // Hide all videos
+    const videos = document.querySelectorAll('.video');
+    videos.forEach(video => video.style.display = 'none');
+
+    // Show the selected video
+    const videoToShow = document.getElementById(videoId);
+    if (videoToShow) {
+        videoToShow.style.display = 'block';
+    }
+}
+
+
+function closeAllSubMenus() {
+    Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
+        ul.classList.remove('show');
+        ul.previousElementSibling.classList.remove('rotate');
+    });
+}
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
