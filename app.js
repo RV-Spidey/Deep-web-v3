@@ -1,9 +1,10 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 const userElement = document.getElementById('user');
+const user = localStorage.getItem('userName');
+
 // Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
 const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
-const user = localStorage.getItem('userName');
 
 // Function to get a cookie by name
 function getCookie(name) {
