@@ -3,7 +3,8 @@ const sidebar = document.getElementById('sidebar');
 
 // Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
 const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
-
+const user = localStorage.getItem('username');
+document.getElementById("user").textContent = user;
 // Function to get a cookie by name
 function getCookie(name) {
     const nameEQ = name + "=";
