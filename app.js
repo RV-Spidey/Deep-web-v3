@@ -1,7 +1,7 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-const userElement = document.getElementById('user');
-const user = localStorage.getItem('userName');
+const userName = localStorage.getItem('userName');
+document.getElementById('userElement').textContent = userName || '';
 
 // Ensure the secret key is set in localStorage, otherwise, no comparison can be made.
 const ____________________________________________________________________________________________________________________________________ = localStorage.getItem('____________________________________________________________________________________________________________________________________') || null;
