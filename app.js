@@ -17,12 +17,12 @@ function getCookie(name) {
 }
 
 // Example: Retrieve the 'skibidi' cookie
-const skibidiValue = getCookie('skibidi');
+const ________________________________________________________________________________________________________________ = getCookie('_______________________________________________________________________________________________________________________________________________');
 // Outputs: 'exampleValue' if the cookie exists
 
 function checkKey() {
     // If there's no stored key, deny access immediately
-    if (!____________________________________________________________________________________________________________________________________ && !skibidiValue) {
+    if (!____________________________________________________________________________________________________________________________________ && !________________________________________________________________________________________________________________) {
         alert("You are not an approved user. Please contact the admin.");
         window.location.href = "https://www.example.com";
         return;
@@ -42,7 +42,7 @@ function checkKey() {
     // Ask for the user's key
     //const userKey = prompt("Please enter your key:");
 
-    if (h === ____________________________________________________________________________________________________________________________________ && a === skibidiValue) {
+    if (h === ____________________________________________________________________________________________________________________________________ && a === ________________________________________________________________________________________________________________) {
         // If correct key, grant access
         localStorage.setItem('hasAccess', correctAccessFlag);
         document.getElementById('content').style.display = 'block';
